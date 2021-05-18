@@ -1,0 +1,68 @@
+body {
+    background-color: #6ad4db;
+    margin: 0px;
+}
+
+p{
+    color:rgb(28, 155, 28)
+}
+
+li{
+    color:rgb(0, 0, 0);
+}
+
+h1{
+    color:rgb(233, 95, 192);
+}
+
+.grid{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 3px;    
+}
+.origami{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: arial;
+    color: rgb(0, 0, 0);
+    width: 250px;
+}
+.grid img{
+    border: 2px solid rgb(28, 155, 28);
+    border-radius: 50px;
+}
+.origami:hover{
+    transform:scale(1.2)
+}
+a:link{
+    color: snow;
+}
+a:hover{
+    color: lightgreen;
+}
+a:visited{
+    color: coral;
+}
+.origami{
+    position: relative;
+}
+.origami p{
+    position: absolute;
+    top:5%;
+    left:34%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.origami:hover p{
+    opacity: 1;
+}
+.origami:hover img{
+    opacity:0.4
+}
+.origami i{
+    color: rgb(28, 155, 28)
+}
